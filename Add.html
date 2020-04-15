@@ -1,0 +1,95 @@
+<html>  
+<body style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(resturant_2.jpg);
+	background-size:cover;
+	background-position: center;
+	display: flex;"><script type="text/javascript">  
+var count=1;
+var date=0;
+function box()
+{ 
+	var number=document.getElementById("visit").value;  
+	
+   if (count==1)
+	{date=number;
+	var box1=("<pre>Today is your first day </pre>");
+	document.getElementById('first').innerHTML=box1; 
+	var box2="<pre>In Your Second visit you will earn you will earn among one item among the three items <br> Shahi paneer <br> Dal Makhani <br>Baingan Bhaja </pre>";
+	document.getElementById('second').innerHTML=box2; 
+	
+	}
+	if (count==2)
+		{
+		var box1=(" <pre>you have made your first visit on date </pre>"+date.toString());
+		document.getElementById('first').innerHTML=box1; 
+		var box2="<pre>Today is your second visit and you can redeem one dish among  the three items <br> Shahi paneer <input type='button' style='border-radius: 20px; background:lightblue;' value='Redeem'> <br> Dal Makhani<input type='button'style='border-radius: 20px; background:red;' value='Redeem'> <br>Baingan Bhaja <input type='button'style='border-radius: 20px; background:yellow;' value='Redeem'></pre>";
+		document.getElementById('second').innerHTML=box2; 
+		}
+		if (count==3)
+		{
+		var box1=(" <pre>Today is your third visit  </pre>");
+		document.getElementById('first').innerHTML=box1; 
+		var box2="In Your fifth visit you will earn you will earn among one item among the three items <br> Shahi paneer <br> Dal Makhani <br>Baingan Bhaja </pre";
+		document.getElementById('second').innerHTML=box2; 
+		
+		}
+		if (count==4)
+		{
+		var box1=(" <pre>Today is your forth visit  </pre>");
+		document.getElementById('first').innerHTML=box1; 
+		var box2="In Your fifth visit you will earn you will earn among one item among the three items <br> Shahi paneer <br> Dal Makhani <br>Baingan Bhaja </pre";
+		document.getElementById('second').innerHTML=box2; 
+		
+		}
+		if (count==5)
+		{
+		var box1=(" <pre>Today is your fifth visit  </pre>");
+		document.getElementById('first').innerHTML=box1; 
+		var box2=" you can redeem one dish among  the three items <br> Shahi paneer <input type='button'style='border-radius: 20px; background:green;' value='Redeem'> <br> Dal Makhani<input type='button'style='border-radius: 20px; background:red;' value='Redeem'> <br>Baingan Bhaja <input type='button'style='border-radius: 20px; background:blue;' value='Redeem'></pre>";
+		document.getElementById('second').innerHTML=box2; 
+		
+		}
+	
+	count=count+1;
+	
+	}  
+
+ </script>  
+ <form>
+ <pre>
+ <label for="visit" style="color:red;">Date of visit:</label>
+  <input type="date" id="visit" name="visit">
+  Select The Order: 
+  <input type="checkbox" id="Tandoori Chicken" name="food" value="Tandoori Chicken">
+  <label for=" Tandoori Chicken"> Tandoori Chicken</label><br>
+  <input type="checkbox" id="Chicken Tikka " name="food" value="Chicken Tikka ">
+  <label for="Chicken Tikka"> Chicken Tikka </label><br>
+  <input type="checkbox" id="Seekh Kabab" name="food" value="Seekh Kabab">
+  <label for="Seekh Kabab">Seekh Kabab</label><br>
+  <input type="checkbox" id="Vegetable Biryani " name="food " value="Vegetable Biryani ">
+  <label for="Vegetable Biryani ">Vegetable Biryani </label><br>
+  <input type="checkbox" id="Chicken Biryani" name="food" value="Chicken Biryani">
+  <label for="Chicken Biryani">Chicken Biryani</label><br>
+  <input type="checkbox" id="Lemon Rice" name="food" value="Lemon Rice">
+  <label for="Lemon Rice"> Lemon Rice</label><br>
+  <input type="checkbox" id="Naan" name="food" value="Naan">
+  <label for="Naan">Naan</label><br>
+  <input type="checkbox" id="Garlic Naan" name="food" value="Garlic Naan">
+  <label for="Garlic Naan"> Garlic Naan</label><br>
+  <input type="checkbox" id="Cheese Naan" name="food" value="Cheese Naan">
+  <label for="Cheese Naan"> Cheese Naan</label><br>
+  <input type="checkbox" id="Kulfi" name="food" value="Kulfi">
+  <label for="Kulfi">Kulfi</label><br>
+  <input type="checkbox" id="Mango Lassi " name="Mango Lassi " value="Mango Lassi ">
+  <label for="Mango Lassi "> Mango Lassi </label><br>
+  <input type="checkbox" id="Soda Pop" name="food" value="Soda Pop">
+  <label for="Soda Pop">Soda Pop</label><br>
+ 
+ <input type= "button" value="submit" style="border-radius: 20px; background:lightblue;" onclick="box()"> 
+</pre>
+<table>
+<tr><th style="text-align:left;border-style:solid; color:grey;"><div id="first"></div></th><th style="text-align:left; border-style:solid;color:grey "><div id="second"></div></th></tr>
+
+</table>  
+</form>
+</body>  
+</html> 
